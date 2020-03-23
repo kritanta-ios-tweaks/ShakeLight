@@ -1,0 +1,11 @@
+# ninja log v5
+0	113	1585004830795446647	.dragon/build/Tweak.mm	33ae9a1c06e787ce
+113	1482	1585004832164222883	.dragon/build/Tweak.mm.o	b26212db6f11c27d
+1482	1722	1585004832403814298	.dragon/sign/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.nosym	69b14d0de4eeed5e
+1722	1757	1585004832403814298	.dragon/sign/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.unsigned	d8605e7184dbcc96
+1757	1773	1585004832454358220	.dragon/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.dylib	8f6b7e2567fa73ed
+0	115	1585004955169811605	.dragon/build/Tweak.mm	33ae9a1c06e787ce
+115	1760	1585004956814713555	.dragon/build/Tweak.mm.o	b26212db6f11c27d
+1760	2102	1585004957157361898	.dragon/sign/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.nosym	69b14d0de4eeed5e
+2102	2144	1585004957157361898	.dragon/sign/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.unsigned	d8605e7184dbcc96
+2145	2167	1585004957217042837	.dragon/_/Library/MobileSubstrate/DynamicLibraries/ShakeLight.dylib	8f6b7e2567fa73ed
