@@ -6,32 +6,8 @@
 * classdump-dyld is licensed under GPLv3, Copyright Â© 2013-2016 by Elias Limneos.
 */
 
-
-@class AVFlashlightInternal;
-
-@interface AVFlashlight : NSObject {
-
-	AVFlashlightInternal* _internal;
-
-}
-
-@property (getter=isAvailable,nonatomic,readonly) BOOL available; 
-@property (getter=isOverheated,nonatomic,readonly) BOOL overheated; 
-@property (nonatomic,readonly) float flashlightLevel; 
-+(BOOL)hasFlashlight;
-+(void)initialize;
--(void)_handleNotification:(id)arg1 payload:(id)arg2 ;
--(float)flashlightLevel;
--(void)_setupFlashlight;
--(void)_teardownFlashlight;
--(BOOL)isOverheated;
--(void)_reconnectToServer;
--(BOOL)turnPowerOnWithError:(id*)arg1 ;
--(void)turnPowerOff;
+@interface AVFlashlight : NSObject 
 -(BOOL)setFlashlightLevel:(float)arg1 withError:(id*)arg2 ;
--(BOOL)isAvailable;
--(id)init;
--(void)dealloc;
 @end
 
 static AVFlashlight *fleshilght;
@@ -39,16 +15,9 @@ static BOOL flashlightEnabled = NO;
 
 void toggleFlashlight() 
 {
-    if (flashlightEnabled) // if on
-    {
-        [fleshilght setFlashlightLevel:0 withError:nil];
-        flashlightEnabled = NO;
-    }
-    else // if off
-    {
-        [fleshilght setFlashlightLevel:1 withError:nil];
-        flashlightEnabled = YES;
-    }
+
+    [fleshilght setFlashlightLevel: flashlightEnabled ? 0 : 1 withError:nil];
+    flashlightEnabled = !flashlightEnabled;
 
 }
 
