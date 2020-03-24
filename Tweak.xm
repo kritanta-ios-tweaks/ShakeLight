@@ -13,12 +13,12 @@
 static AVFlashlight *fleshilght;
 static BOOL flashlightEnabled = NO;
 
+
 void toggleFlashlight() 
 {
-
-    [fleshilght setFlashlightLevel: flashlightEnabled ? 0 : 1 withError:nil];
     flashlightEnabled = !flashlightEnabled;
-
+    [fleshilght setFlashlightLevel: flashlightEnabled withError:nil];
+    
 }
 
 %hook UIWindow
@@ -26,7 +26,7 @@ void toggleFlashlight()
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     %orig;
-    if(event.type == UIEventSubtypeMotionShake && self == [[UIApplication sharedApplication] keyWindow])
+    if(event.type == UIEventSubtypeMotionShake)
     {
         toggleFlashlight();
     }
