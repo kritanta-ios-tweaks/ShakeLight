@@ -4,6 +4,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = ShakeLight
 ShakeLight_FILES = Tweak.xm
+ShakeLight_FRAMEWORKS = AVFoundation
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
