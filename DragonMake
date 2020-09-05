@@ -1,5 +1,8 @@
 name: ShakeLight
+id: me.krit.shakelight
 icmd: sbreload
+desc: Shake phone to activate flashlight
+author: _kritanta
 ShakeLight:
   type: tweak
   frameworks:
