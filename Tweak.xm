@@ -5,7 +5,7 @@
 * Image Source: /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 * classdump-dyld is licensed under GPLv3, Copyright Â© 2013-2016 by Elias Limneos.
 */
-
+#include <UIKit/UIKit.h>
 
 @class AVFlashlightInternal;
 
